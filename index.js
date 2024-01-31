@@ -11,7 +11,7 @@ const billRoute = require("./routes/billRoute")
 const app = express()
 const PORT = 4000
 app.use(express.json())
-
+app.use(cors())
 app.get('/', function (req, res) {
     res.send('Welcome to Store management')
 })
